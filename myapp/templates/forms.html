@@ -1,0 +1,9 @@
+<h1>FORMS PAGE</h1>
+<form action="">
+    {% csrf_token %}
+    {% for i in f %}
+        {{i.lable_tag}}
+        {{i}}
+    {% endfor %}
+    <button>Submit</button>
+</form>
